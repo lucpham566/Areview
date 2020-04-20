@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>areview</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vender/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./vender/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css">
+</head>
+
+<body>
+    <!-- --------------------- NAVBAR ------------------------ -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" height="50px">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="row">
+
+                        <div class="col-xs-8 col-sm-10 col-md-10 col-lg-8">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        </div>
+
+
+                        <div class="col-xs-4 col-sm-2 col-md-2 col-lg-4">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giỏ hàng <i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Cá nhân <i class="fas fa-user"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Thông tin cá nhân</a>
+                            <a class="dropdown-item" href="#">Cài đặt</a>
+                            <a class="dropdown-item" href="#">Đóng góp</a>
+                            <a class="dropdown-item" href="#">Đăng suất</a>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------- CONTENT ----------------------------- -->
+    <section class="content-section pt-3 pb-3">
+        <div class="container">
+            <div class="share mb-2">
+                <h2>Meski Deal</h2>
+                <span>Cập nhật hàng giờ tất cả những deal giảm giá đặc biệt trên Tiki. Hãy bookmark trang này và quay
+                    lại thường xuyên để không bỏ lỡ bạn nhé!</span>
+                <a href="#" class="text-danger" id="btn">Share</a>
+            </div>
+
+            <div class="card text-left mb-3 ads-content">
+                <div class="card-header">
+                    <h4>Các sản phẩm HOT trong tuần</h4>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div id="carouselId" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselId" data-slide-to="1"></li>
+                                <li data-target="#carouselId" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" src="./img/product1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="card-title text-dark">Áo Tee SWE</h4>
+                                        <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                        <div class="text-center">
+                                            <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                            <button type="button" class="btn btn-warning">Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" src="./img/product2.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="card-title text-dark">Áo Tee SWE</h4>
+                                        <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                        <div class="text-center">
+                                            <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                            <button type="button" class="btn btn-warning">Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" src="./img/product3.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 class="card-title text-dark">Áo Tee SWE</h4>
+                                        <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                        <div class="text-center">
+                                            <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                            <button type="button" class="btn btn-warning">Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <a href="#"><img src="./img/ads1.jpg" width="100%" height="320px" alt=""></a>
+                    </div>
+                    
+                </div>
+              <div class="card-body">
+                <h4 class="card-title">Chọn được hàng phù hợp nhất với bạn bằng Areview</h4>
+              </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="poster mt-2 mb-4">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <img class="avatar-user" src="./img/logoSWE.jpg" alt="">
+                                <span class="name-user">SWE StreetWear</span>
+                            </div>
+                            <div class="card-body mt-0">
+                                <img class="card-img-top" src="./img/product1.jpg" alt="">
+                                <hr>
+                                <h4 class="card-title">Áo Tee SWE</h4>
+                                <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                <div class="text-center">
+                                    <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                    <button type="button" class="btn btn-warning">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="poster mt-2 mb-4">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <img class="avatar-user" src="./img/logoSWE.jpg" alt="">
+                                <span class="name-user">SWE StreetWear</span>
+                            </div>
+                            <div class="card-body mt-0">
+                                <img class="card-img-top" src="./img/product2.jpg" alt="">
+                                <hr>
+                                <h4 class="card-title">Áo Tee SWE</h4>
+                                <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                <div class="text-center">
+                                    <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                    <button type="button" class="btn btn-warning">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="poster mt-2 mb-4">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <img class="avatar-user" src="./img/logoNOW.jpg" alt="">
+                                <span class="name-user">SWE StreetWear</span>
+                            </div>
+                            <div class="card-body mt-0">
+                                <img class="card-img-top" src="./img/SWE-CUBE-TEE-BLUE1.jpg" alt="">
+                                <hr>
+                                <h4 class="card-title">Áo Tee SWE</h4>
+                                <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                <div class="text-center">
+                                    <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                    <button type="button" class="btn btn-warning">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="poster mt-2 mb-4">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <img class="avatar-user" src="./img/logoNOW.jpg" alt="">
+                                <span class="name-user">SWE StreetWear</span>
+                            </div>
+                            <div class="card-body mt-0">
+                                <img class="card-img-top" src="./img/product3.jpg" alt="">
+                                <hr>
+                                <h4 class="card-title">Áo Tee SWE</h4>
+                                <p class="card-text text-danger">Giá dự kiến : 500.000 VNĐ</p>
+                                <div class="text-center">
+                                    <a href="./poster.html" class="btn btn-outline-success">Chi tiết</a>
+                                    <button type="button" class="btn btn-warning">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------- FOOTER -------------------------------------- -->
+    <footer class="footer">
+        <div class="container pt-5">
+            <div class="row">
+                
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-ul">
+                        <li>
+                            <h6 class="display-6 mb-4">HỖ TRỢ KHÁCH HÀNG</h6>
+                        </li>
+                        <li>
+                            <h4 class="text-danger">Hotline chăm sóc khách hàng : 1900 6677</h4>
+                        </li>
+                        <li>
+                            <a href="#"><p>Các câu hỏi thường gặp</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Gửi yêu cầu hỗ trợ</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Hướng dẫn đặt hàng</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Chính sách đổi trả</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Hỗ trợ khách hàng</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Chính sách hàng nhập khẩu</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-ul">
+                        <li>
+                            <h6 class="display-6 mb-4">VỀ AREVIEW</h6>
+                        </li>
+                        <li>
+                            <a href="#"><p>Tuyển dụng nhân sự</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Chính sách bảo mật thông tin cá nhân</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Chính sách giải quyết khiếu nại</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Điểu khoản hợp đồng</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>areview tư vấn</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Bán hàng doanh nghiệp</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-ul">
+                        <li>
+                            <h6 class="display-6 mb-4">HỢP TÁC VÀ LIÊN KẾT</h6>
+                        </li>
+                        <li>
+                            <a href="#"><p>Quy chế hoạt động</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><p>Bán hàng cùng areview</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <ul class="footer-ul">
+                        <li>
+                            <h6 class="display-6 mb-4">KẾT NỐI VỚI CHÚNG TÔI</h6>
+                        </li>
+                        <div class="row">
+                            
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="https://www.facebook.com/phamtien.lu" target="_blank">                                
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEVCZ7L///+5w95GarM2YK80Xq+pttc+ZbFfe7s6YrCHmsmZqdA8Y7Ds8PdSdLlffr3V3OyQpNFrh8Lg5vIvW633+fyCmsxKb7fG0eier9WtutnAy+Ta4e91jsR8k8eMn8zP1ulvh8Dx9PkmVqvo7ff2SOu1AAAEYklEQVR4nO3da3uqOBSG4YDBmDYkHEStp1qn//83jqfuvWemoxGarBWu9/myP9XNfS0sIJGK7FpZ1Y0VY8k2dVXeZOL6T+6kNtTb9YMZLV3+h7B1cky8a0a69ktYWU29OUHStroKWzu+AV4ztr0I3TgneE67szCX1NsRMJlnonRj3UfPGVeKaswjPA2xEvV434XndC2aMe+kp920EeM5Vfu+sfsQQgghhBBCCCGEEPJJKWOM1lpKfc5cUkoo6g37mbQshG12+8XLe/1+6mWx3+8+GjezSyXnRXESq1SpyuhiPlmsq21bHrvudrc667ruWJafn227rQ6b9euisUWStySUFM3r6pfrfq/pEc18Oa2OfryzMLW7Lnry4Tu9JGeoin31DC+1GSrjDk/NL7UZmsn0aV9SM5R2+7wvoRmq4q3HABMSnoC9fMnspWqy6glMZIbKbPoCU5lhf2AaMyym/YFJzFDXA4ApzNA0/qfZSc5QyWfPRFOboR7yJkxBaNygfTSBvXTe+1CfyAyNGwjkPkOlhv2a4T9Ds+t3QZHODE0+FMh8hmo5eITMZygHna+lMEPZ63OLhITGlY8FD4Wc91LZ95OLfwgZz1ANufD9LWQ8Q2U/f0LIeIZm9gSk267y9Xo9/XfrD8bfFtELX95xs58tJ0rLb2IMFIXnCU05nRQmyRvbc7+jYTXTCeIuSa9r343ivB/eb+kjLJfpAk3jc9q9Y3wweJTZewhXyS4nEZ4XFu8Jj1Do18fA0iY8Qq/z7kNBvZVD8rkfM01aKNceb0PGFw6P8zlpS/tL2D7C2eiFSf8q9RIuqTdyUD7CCfVGDgpCCPkHIYT8gxBC/kEIIf8ghJB/EELIv1EI1Xc33r/6y0NoinuvcIr4E2Pl/rt24o88bnLf+/FLb7RE/fLYMLDP+diFK9pbNxGEa9o7qBGExKvaIghfxi7sdrQ3p8ILqR9FHl7YEt9+Cy+sJmMXHoiX24QX5sRrNcIL30Y/wz3xSobwQuq/WxFeSOuLIOxor50iCNvRCzfUC/uCC8mXLgYX1tQriIMLqQ+HwYUd+eLM0MLSUS9dDC3cki/ODC08EF8dhhduqN+GwYXEH5ZGENJ/BTiwsCM/HAYXkh8OQwuP9OvcQwupz7uDC7fUV4cn4XtQIfG9w3Nq6Wb/n/V4ZsS9n59x+LuG6l5zj5UKwtx5AWrdw0ax2uRuEELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8g/EEh0bMJogmtIHrMSyyhaURN8zCiWEJdi4rmgVKxhLISRA82jyQ0rhRZTjLESEKZZyLrHMU7MY5Qu+wkzFpLsJ9GERrbXoRZZeNPMYZQ2yq7CrPWydhjDC800rXZlzDrcid1VGRgodHS3f4HcXu1sqqbmCdwYYW2qavy9ip/A3YKUMidEST2AAAAAElFTkSuQmCC" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="https://www.facebook.com/phamtien.lu" target="_blank">                                
+                                    <img src="https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <a href="https://www.facebook.com/phamtien.lu" target="_blank">                                
+                                    <img src="https://tptech.com.vn/wp-content/uploads/2019/03/Zalo-la-gi.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
